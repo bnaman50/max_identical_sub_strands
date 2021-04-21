@@ -42,6 +42,7 @@ It is possible that there are two sets of file with different maximum identical 
 <br />
 <br />
 Note: Here offset means the index from where the identical part starts (not the one before it). Look at the follwoing picture for refeence since I am using the same function. 
+![note_pic](https://user-images.githubusercontent.com/5251592/115482552-97842e80-a214-11eb-9ed8-4b5e374bc7e8.png)
 
 
 
