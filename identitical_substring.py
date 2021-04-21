@@ -1,6 +1,6 @@
 import glob
 from  difflib import SequenceMatcher
-from srblib import  abs_path
+from pathlib import Path
 import os
 import operator
 from itertools import combinations
@@ -70,7 +70,7 @@ def get_offset(my_tuple, file_idx):
 
 def main(inp_dir):
     ## Read the files. Sort them according to their number
-    inp_dir = abs_path(inp_dir)
+    inp_dir = Path(inp_dir).resolve()
     bin_files = [file for file in glob.glob(os.path.join(inp_dir, f"sample.*"))]
     bin_files = sorted(bin_files, key=lambda x: get_fIdx(x))
 
