@@ -4,7 +4,7 @@
 `python identitical_substring.py`
 
 ## Problem Statement 
-Please refer to the file [Problem - Longest Strand.md](Problem - Longest Strand.md) for the problem description. 
+Please refer to the file [Problem - Longest Strand.md](./Problem - Longest Strand.md) for the problem description. 
 
 ## Assumptions
 > longest strand of bytes that is identical between two or more files
