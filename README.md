@@ -29,7 +29,23 @@ combinations.
 <br />
 But this is going to be very time-intensive. My key insight is that **I don't need to look for anything more than `nC2` combinations since `MIS(S1, S2, ..., Si) <= MIS(S1, S2)`** (where `Si`'s are various strings and `i` is greater than 2.)
 
-## TODO
+## Results 
+```
+The length of maximum strand is 27648. It occurs in following sets of files
+
+Set: 1/1
+Its files and corresponding offsets are as follows:
+File name: sample.2, Offset: 3072
+File name: sample.3, Offset: 17408
+```
+It is possible that there are two sets of file with different maximum identical sub strands. I print all such sets seperately. 
+<br />
+<br />
+Note: Here offset means the index from where the identical part starts (not the one before it). Look at the follwoing picture for refeence since I am using the same function. 
+
+
+
+## Future
 On further thinking, I realized that you can make it even faster but I am gonna leave it for future. The idea is that I am going redundant work while calculating `MIS(S1, S3)` once I have computed `MIS(S1, S2)` and `MIS(S2, S3)`. 
 ```
 MIS(S1, S3) = (left-side) + MIS(MIS(S1, S2), MIS(S2, S3))
