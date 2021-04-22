@@ -1,5 +1,8 @@
 # max_identical_sub_strands
 
+## Requirements
+Python 3
+
 ## Usage
 `python identitical_substring.py`
 
